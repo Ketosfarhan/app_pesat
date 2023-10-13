@@ -1,0 +1,68 @@
+/* belajar css puh sepuh */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /* vh :viewport height */
+    width: 100vw; /* vh :viewport width */
+    display: flex; /* row / horizontal */
+    flex-direction: row;
+    background-color: lightblue;
+    background-image: linear-gradient(to right, #004aad 10%, #cb6ce6 100%);
+    background-size: 300%;
+    animation: animation 3s infinite alternate;
+}
+
+@keyframes animation {
+    0%{
+        background-position:left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.textContainer {
+    height: 100vh;
+    width: 50%;
+   /*border: 1px solid;*/
+   
+}
+
+.formContainer {
+    height: 100vh;
+    width: 50%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    padding: 120px;
+
+}
+
+.inputChildContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputChildContainer > input, select {
+    width: 240px;
+    height: 32px;
+}
+
+.buttonChildContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttonChildContainer > button {
+    width: 160px;
+    height: 36px;
+}
